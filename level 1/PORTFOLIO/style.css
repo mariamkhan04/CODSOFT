@@ -11,7 +11,7 @@
   
 .navbar{
     height: 60px;
-    background-color: #0F1111;
+    background-color: #0E273C;
     color: white;
     display: flex;
     justify-content: space-evenly;
@@ -68,4 +68,35 @@
 }
 .nav-pages a:active{
     color: yellow;
+}
+/* About section */
+.about{
+    background-color: #4A306D;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 180px 200px 100px 300px;
+    column-gap: 40px;
+    color: white;
+}
+.image{
+    /* background-color: aqua; */
+    position: relative;
+    overflow: hidden;
+}
+.image img{
+    height: 300px;
+    border-radius: 170px;
+}
+/* .bio{
+    background-color: #A167A5;
+} */
+.about p{
+    margin-top: 40px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+}
+.about h1, .about h2 , .about h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
