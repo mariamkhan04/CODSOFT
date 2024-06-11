@@ -72,7 +72,7 @@
 /* About section */
 .about{
     background-color: #4A306D;
-    height: 400px;
+    height: 420px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     padding: 180px 200px 100px 300px;
@@ -81,7 +81,7 @@
 }
 .image{
     /* background-color: aqua; */
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
 }
 .image img{
@@ -96,7 +96,72 @@
     /* padding-left: 10px;
     padding-right: 10px; */
 }
-.about h1, .about h2 , .about h3{
+.about h1, .about h2 , .about h3, .about button{
     margin-top: 10px;
     margin-bottom: 10px;
+}
+.about button{
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    background-color: #0E273C;
+    color: white;
+}
+button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: black;
+    background-color: aliceblue;
+}
+button:active{
+    color: red;
+}
+
+/* skills section */
+.skills{
+    height: 450px;
+    background-color: #4A306D;
+}   
+.skills-list{
+    background-color: antiquewhite;
+    height: 350px;
+    margin: 0 100px 20px 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.skills-list h2{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+.skills-list h2:hover{
+    animation: skillAnimate 5s ease-in forwards;
+    cursor: pointer;
+}
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px;
+}
+
+.progress {
+    background-color: #D3BCCC;
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+}
+
+@keyframes skillAnimate{
+    from{
+        color: black;
+        font-size: 40px;
+    }
+    to{
+        color: #D3BCCC;
+        font-size: 100px;
+    }
 }
