@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MilkyWay - Milkshake Shop</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- header section -->
@@ -53,37 +54,87 @@
                 <h2>About Us</h2>
                 <p>MilkyWay is a family-owned milkshake shop offering a wide variety of delicious flavors. We're dedicated to bringing joy with high-quality ingredients and creative recipes. Whether you love classic vanilla or crave adventurous flavors like Chocolate Heaven or Berry Blast, we have something for you.</p>
                 <p>Each milkshake at MilkyWay is crafted for a creamy, flavorful experience that keeps our customers coming back.</p>
-                <p>Visit us today or order online to enjoy the galaxy's finest milkshakes.</p>
+                <p>Visit our website or order online to enjoy the galaxy's finest milkshakes.</p>
                 <div class="about-buttons">
-                    <button>Order Now</button>
-                    <button>Visit us</button>
+                    <button><a href="#contact">Order Now</a></button>
                 </div>
             </div>
         </div>
     </section>
-    <section id="menu">
-        <div class="container">
+    <!-- menu section -->
+    <section id="menu" class="menu">
+        <div class="container menu-grid">
             <h2>Our Menu</h2>
             <div class="menu-items">
-                <div class="menu-item">
+                <div class="menu-item" style="background-image: url('vanilla.avif');">
                     <h3>Classic Vanilla</h3>
                     <p>A timeless favorite made with real vanilla beans.</p>
                 </div>
-                <div class="menu-item">
+                <div class="menu-item" style="background-image: url('chocolate.avif');">
                     <h3>Chocolate Heaven</h3>
-                    <p>Rich and creamy chocolate milkshake topped with whipped cream.</p>
+                    <p>Rich & creamy chocolate milkshake topped with whipped cream.</p>
                 </div>
-                <div class="menu-item">
+                <div class="menu-item" style="background-image: url('berryblast.avif');">
                     <h3>Berry Blast</h3>
                     <p>A refreshing blend of strawberries, blueberries, and raspberries.</p>
                 </div>
+                <div class="menu-item" style="background-image: url('mango.avif');">
+                    <h3>Mango Tango</h3>
+                    <p>A tropical treat with juicy mangoes and a hint of lime.</p>
+                </div>
+                <div class="menu-item" style="background-image: url('mocha.jpg');">
+                    <h3>Mocha Delight</h3>
+                    <p>A perfect blend of coffee and chocolate for a caffeine kick.</p>
+                </div>
+                <div class="menu-item" style="background-image: url('caramel.jpg');">
+                    <h3>Caramel Swirl</h3>
+                    <p>Sweet and smooth caramel flavor in every sip.</p>
+                </div>
+            </div>
+            <div class="menu-btn">View More</div>
+        </div>
+    </section>    
+    <!-- contact section -->
+     <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-info">
+                <h2>REACH US OUT</h2>
+                <p>Get in touch with us for any queries or feedback.</p>
+                <p><i class="fas fa-envelope"></i> milky.way@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +921234567891</p>
+            </div>
+            <div class="order-form">
+                <form action="">
+                    <h2>Order Now</h2>
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel" placeholder="Phone Number" required>
+                    <select name="flavor" required>
+                        <option value="flavor1">Classic Vanilla</option>
+                        <option value="flavor2">Chocolate Heaven</option>
+                        <option value="flavor3">Berry Blast</option>
+                        <option value="flavor4">Mango Tango</option>
+                        <option value="flavor5">Mocha Delight</option>
+                        <option value="flavor6">Caramel swirl</option>
+                        <option value="flavor7">Pina colada</option>
+                        <option value="flavor8">Minty Chocolate</option>
+                    </select>
+                    <select name="size" class="size">
+                        <option value="s1">Small</option>
+                        <option value="s2">Medium</option>
+                        <option value="s3">Large</option>
+                    </select>
+                <input type="address" placeholder="Address" required>
+                <textarea name="message" rows="2" placeholder="Additional requirement"></textarea>
+                <button class="form-btn" type="submit">Place Order</button>
+            </form>
             </div>
         </div>
-    </section>
+     </section>
     <footer>
         <div class="container">
             <p>&copy; 2024 MilkyWay. All rights reserved.</p>
-            <p><a href="#contact">Contact Us</a></p>
+            <p><a href="#contact">Contact Us <i class="fas fa-phone"></i></a></p>
         </div>
     </footer>
 </body>
