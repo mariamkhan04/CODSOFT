@@ -109,23 +109,46 @@
                     <input type="text" placeholder="Name" required>
                     <input type="email" placeholder="Email" required>
                     <input type="tel" placeholder="Phone Number" required>
-                    <select name="flavor" required>
-                        <option value="flavor1">Classic Vanilla</option>
-                        <option value="flavor2">Chocolate Heaven</option>
-                        <option value="flavor3">Berry Blast</option>
-                        <option value="flavor4">Mango Tango</option>
-                        <option value="flavor5">Mocha Delight</option>
-                        <option value="flavor6">Caramel swirl</option>
-                        <option value="flavor7">Pina colada</option>
-                        <option value="flavor8">Minty Chocolate</option>
-                    </select>
+                    <div class="flavors">
+                        <div class="flavor-item" id="flavor1">
+                            <label for="flavor1">Classic Vanilla</label>
+                            <input type="checkbox">
+                            <input type="number" min="1" max="10" value="1">
+                        </div>
+                        <div class="flavor-item" id="flavor2">
+                            <label for="flavor2">Chocolate heaven</label>
+                            <input type="checkbox">
+                            <input type="number" min="1" max="10" value="1">
+                        </div>
+                        <div class="flavor-item" id="flavor3">
+                            <label for="flavor3">Berry Blast</label>
+                            <input type="checkbox">
+                            <input type="number" min="1" max="10" value="1">
+                        </div>
+                        <div class="flavor-item" id="flavor4">
+                            <label for="flavor4">Mango Tango</label>
+                            <input type="checkbox">
+                            <input type="number" min="1" max="10" value="1">
+                        </div>
+                        <div class="flavor-item" id="flavor5">
+                            <label for="flavor5">Mocha Delight</label>
+                            <input type="checkbox">
+                            <input type="number" min="1" max="10" value="1">
+                        </div>
+                        <div class="flavor-item" id="flavor6">
+                            <label for="flavor6">Caramel Swirl</label>
+                            <input type="checkbox">
+                            <input type="number" min="1" max="10" value="1">
+                        </div>
+                    </div>
+                    <button class="more-btn">Select more flavors</button>
                     <select name="size" class="size">
                         <option value="s1">Small</option>
                         <option value="s2">Medium</option>
                         <option value="s3">Large</option>
                     </select>
                 <input type="address" placeholder="Address" required>
-                <textarea name="message" rows="2" placeholder="Additional requirement"></textarea>
+                <!-- <textarea name="message" rows="2" placeholder="Additional requirement"></textarea> -->
                 <button class="form-btn" type="submit">Place Order</button>
             </form>
             </div>
